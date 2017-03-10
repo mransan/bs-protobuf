@@ -1,0 +1,14 @@
+{
+  "name": "bs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts" : {
+    "start" : "node lib/js/src/example01/example01.js",
+    "gen" : "ocaml-protoc -ml_out src/example01 src/example01/example01.proto",
+    "build" : "bsb"
+  },
+  "dependencies": {
+    "bs-platform": "^1.5.0"
+  }
+}

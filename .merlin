@@ -1,0 +1,12 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx /home/maxime_ransan/bs-test/node_modules/bs-platform/bin/bsppx.exe
+S /home/maxime_ransan/bs-test/node_modules/bs-platform/lib/ocaml
+B /home/maxime_ransan/bs-test/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -no-alias-deps -color always -w -40+6+7+27+32..39+44+45
+S src/example01
+B lib/bs/src/example01
+S src/ocaml-protoc
+B lib/bs/src/ocaml-protoc
+S src/protobuf
+B lib/bs/src/protobuf
+####BSB GENERATED: NO EDIT}

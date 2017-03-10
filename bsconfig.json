@@ -1,0 +1,4 @@
+{
+  "name": "test",
+  "sources": ["src/protobuf", "src/ocaml-protoc", "src/example01"]
+}
