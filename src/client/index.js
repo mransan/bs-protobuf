@@ -10,7 +10,7 @@
 
 import {
   string_of_person, 
-  person_of_base64} from '../../lib/js/src/shared/example01/example01' 
+  person_of_binary} from '../../lib/js/src/shared/example01/example01' 
 
 const base64MessageEl = document.getElementById("base64Message");
 const personStringEl = document.getElementById("personString");
@@ -20,10 +20,13 @@ function requestRandomPerson() {
 
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      base64MessageEl.innerHTML = this.responseText;
-      const person = person_of_base64(this.responseText);
+      const person = person_of_binary(this.responseText);
       const personString= string_of_person(person);
       personStringEl.innerHTML = personString; 
+      base64MessageEl.innerHTML = 
+        new String(this.responseText.length) + 
+        " | " + 
+        new String(personString.length);
     }
   };
   xhttp.open("GET", "/person", true);

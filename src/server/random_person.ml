@@ -32,4 +32,4 @@ let random_person () = Example01_pb.({
     random_phone (); 
     random_phone ();
   ];
-}) |> Example01.base64_of_person 
+}) |> Example01.binary_of_person
