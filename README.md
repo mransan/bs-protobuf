@@ -1,8 +1,8 @@
 # bs-protobuf
 
 > Prototype the use of ocaml-protoc with BuckleScript for Isomorphic type sharing and serialization
-> between a Javascript client and server. Note that the OCaml code could is also usable with 
-> a native server
+> between a Javascript client and server. Note that the OCaml code is also usable with 
+> a native server.
 
 The application consists in a server exposing a `/person` endpoint which returns a value of the ocaml type
 [person](src/shared/example01/example01_pb.mli). This person type was generated with the 
@@ -33,5 +33,5 @@ the decoded value.
 
 **[src/server](src/server)**
 
-Server side code consist in an a simple OCaml module to generate random value of the `person` type. It also contain the
+Server side code consists in an a simple OCaml module to generate random value of the `person` type. It also contain the
 express server.
