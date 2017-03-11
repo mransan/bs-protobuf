@@ -35,3 +35,12 @@ the decoded value.
 
 Server side code consists in an a simple OCaml module to generate random value of the `person` type. It also contain the
 express server.
+
+## Installation
+
+```
+git clone https://github.com/mransan/bs-protobuf.git bs-protobuf.git
+cd bs-protobuf.git
+yarn install
+yarn start
+```
