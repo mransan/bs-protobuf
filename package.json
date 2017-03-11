@@ -1,14 +1,22 @@
 {
-  "name": "bs-test",
+  "name": "bs-protobuf",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts" : {
-    "start" : "node lib/js/src/example01/example01.js",
-    "gen" : "ocaml-protoc -ml_out src/example01 src/example01/example01.proto",
-    "build" : "bsb"
+  "scripts": {
+    "start": "yarn build && babel-node src/server",
+    "build": "bsb && webpack --progress",
+    "gen": "ocaml-protoc -ml_out src/example01 src/example01/example01.proto"
   },
   "dependencies": {
-    "bs-platform": "^1.5.0"
+    "bs-platform": "^1.5.0",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "webpack": "^2.2.1"
   }
 }

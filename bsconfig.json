@@ -1,4 +1,10 @@
 {
   "name": "test",
-  "sources": ["src/protobuf", "src/ocaml-protoc", "src/example01"]
+  "sources": [
+    "src/shared/ocaml-base64", 
+    "src/shared/ppx_deriving_protobuf", 
+    "src/shared/ocaml-protoc", 
+    "src/shared/example01",
+    "src/server/"
+  ]
 }
